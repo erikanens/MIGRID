@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MIGRID</title>
+  <script src="register.js" type="module"defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="Migrid_logo.png" alt="Migrid logo">
+  </header>
+  <h2>Registrering av ett nytt migränanfall</h2>
+  <form id="painForm">
+    <label for="startTime">Starttid:</label>
+    <input type="datetime-local" id="startTime" required><br>
+
+    <label for="endTime">Sluttid:</label>
+    <input type="datetime-local" id="endTime" required><br>
+
+    <label for="painScale">Smärtskala (1-10):</label>
+    <input type="number" id="painScale" min="1" max="10" required><br>
+
+    <label for="painArea">Smärtområde:</label>
+    <input type="text" id="painArea" required><br>
+
+    <label for="symptom">Symptom:</label>
+    <input type="text" id="symptom" required><br>
+
+    <label for="activity">Aktiviteter:</label>
+    <input type="text" id="activity" required><br>
+
+    <label for="triggers">Triggers:</label>
+    <input type="text" id="triggers" required><br>
+
+    <label for="medicine">Medicin:</label>
+    <input type="text" id="medicine" required><br>
+
+    <input type="submit" value="Spara">
+  </form>
+  <footer>
+    <p>&copy; 2023 Migrid - Designprojekt av Erica</p>
+  </footer>
+</body>
+</html>
